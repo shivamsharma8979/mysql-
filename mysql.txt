@@ -1,0 +1,20 @@
+create database mytable
+use mytable
+create table myinfo(eid int identity, ename varchar(50), emoblie int , email varchar(50), salary int )
+select *from myinfo  
+insert into myinfo(ename ,emoblie ,email , salary)values('naman',49745,'naman255@gmail.com',4842),
+('aman', 82989455,'stabsd965@gmail.com',56755),
+('chhavi', 14879654,'chhavi8@gmail.com',547555),
+('rahul', 48452448,'rahul65@gmail.com',41155)
+
+update myinfo
+set salary=5487252  where  ename='shivam' and email='shivam5965@gmail.com'
+select *from myinfo  
+select ename , salary from myinfo where eid='4'  
+alter table myinfo add city varchar(50)
+update myinfo
+set city='rampur'  where  ename='naman' 
+update myinfo
+set city='meerut'  where  ename='chhavi' 
+update myinfo
+set city='noida'  where  ename='aman'
