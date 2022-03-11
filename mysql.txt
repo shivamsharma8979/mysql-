@@ -1,20 +1,60 @@
-create database mytable
-use mytable
-create table myinfo(eid int identity, ename varchar(50), emoblie int , email varchar(50), salary int )
-select *from myinfo  
-insert into myinfo(ename ,emoblie ,email , salary)values('naman',49745,'naman255@gmail.com',4842),
-('aman', 82989455,'stabsd965@gmail.com',56755),
-('chhavi', 14879654,'chhavi8@gmail.com',547555),
-('rahul', 48452448,'rahul65@gmail.com',41155)
+create database shivam 
+use shivam 
+create table eshivam( sid int identity  , sname varchar (50), email varchar(50) unique , phone int unique , addres varchar(50))  
+select * from  eshivam 
+insert into eshivam( sname , email , phone , addres)values('shivam' , 'shivam@gmail.com', 0000000000,'moradabad')
+update eshivam
+set phone=1010101010 where sid=1
+insert into eshivam( sname , email , phone , addres)values	
+('naman ' , 'naman@gmail.com', 0124201,'noida'),
+('manish ' , 'manish@gmail.com', 016874,'rampur'),
+('raju ' , 'raju@gmail.com', 1000001,'noida'),
+('chhavi ' , 'chhavi@gmail.com', 1823569,'rampur'),
+('ashish' , 'ashish@gmail.com', 12784514,'noida'),
+('aniket ' , 'aniket@gmail.com', 5785462,'moradabad'),
+('ankur ' , 'ankur@gmail.com', 1455823,'moradabad'),
+('kapil ' , 'kapil@gmail.com', 8948543,'moradabad'),
+('ujjwal ' , 'ujjwal@gmail.com', 896547,'moradabad'),
+('ritik ' , 'ritik@gmail.com', 875429,'noida'),
+('deepak' , 'deepak@gmail.com', 253578,'kashipur')
+select  *from  eshivam 
+select *from  eshivam order by sid desc
+select *from  eshivam order by sid asc 
+select distinct sname from eshivam 
+select *from eshivam where sname like '%s_'
+select *from eshivam where sname like '%s__'
+select *from eshivam where sname like '%s___'
+select *from eshivam where sname like '_s%'
+select *from eshivam where sname like '__s%'
+select *from eshivam where sname like '___s%'
+select *from eshivam where sname like '%s%'
 
-update myinfo
-set salary=5487252  where  ename='shivam' and email='shivam5965@gmail.com'
-select *from myinfo  
-select ename , salary from myinfo where eid='4'  
-alter table myinfo add city varchar(50)
-update myinfo
-set city='rampur'  where  ename='naman' 
-update myinfo
-set city='meerut'  where  ename='chhavi' 
-update myinfo
-set city='noida'  where  ename='aman'
+select distinct sname from eshivam 
+select  *from  eshivam
+delete from eshivam where sid=1
+insert into eshivam( sname , email , phone , addres)values
+('rakfdh ' , 'rhfgdhh@gmail.com', 4554545,'noida'),
+('sdfgsd ' , 'fdhrthsd@gmail.com', 54854514,'rampur'),
+('dfgdfsfg' , 'rhdfghu@gmail.com',87512345,'noida'),
+('fgdsfg ' , 'tressi@gmail.com', 4251454,'rampur'),
+('dgdfgfdh' , 'ergddt@gmail.com', 1279514,'noida'),
+('gfsdgrt ' , 'rthjuiy@gmail.com', 5789692,'moradabad'),
+('rtyryur ' , 'rasfg@gmail.com', 14577001,'moradabad'),
+('kapil ' , 'wrwqqtg@gmail.com', 8940356,'moradabad'),
+('ujjwal ' , 'rtwst@gmail.com', 8962200,'moradabad'),
+('ritik ' , 'yheefgyk@gmail.com', 87522529,'noida'),
+('deepak' , 'ioppmdk@gmail.com', 2530698,'kashipur')
+select  *from  eshivam 
+alter table eshivam  add gender varchar(5)
+update eshivam
+set gender='m' where sid=33 or sid=34 or sid=35 or sid=36 or sid=37 or sid=38 or sid=39 or sid=40 or sid=41 or sid=27 or sid=28 or sid=29
+select  *from  eshivam  
+select *from eshivam where addres='noida'  
+alter table eshivam add country varchar(25)
+update eshivam
+set country='canada' where sid=31 or sid=24 or sid=22  or sid=26
+select  *from  eshivam
+select *from eshivam where addres='noida'  and country='brazil'
+select *from eshivam where addres='noida'  and country='canada'
+select *from eshivam where addres='moradabad'  and country='canada'
+select *from eshivam where addres='moradabad'  and country='brazil'
