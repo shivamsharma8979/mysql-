@@ -28,7 +28,8 @@ select *from eshivam where sname like '_s%'
 select *from eshivam where sname like '__s%'
 select *from eshivam where sname like '___s%'
 select *from eshivam where sname like '%s%'
-
+select *from eshivam where sname like 'a____'
+select *from eshivam where sname not  like '_a%'
 select distinct sname from eshivam 
 select  *from  eshivam
 delete from eshivam where sid=1
@@ -52,9 +53,5 @@ select  *from  eshivam
 select *from eshivam where addres='noida'  
 alter table eshivam add country varchar(25)
 update eshivam
-set country='canada' where sid=31 or sid=24 or sid=22  or sid=26
+set country='canada' where sid=1 or sid=2 or sid=3  or sid=4or sid=5 or sid=6 or sid=7  or sid=8 or sid=9 or sid=10 or sid=11  
 select  *from  eshivam
-select *from eshivam where addres='noida'  and country='brazil'
-select *from eshivam where addres='noida'  and country='canada'
-select *from eshivam where addres='moradabad'  and country='canada'
-select *from eshivam where addres='moradabad'  and country='brazil'
